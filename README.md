@@ -44,12 +44,48 @@ The top 10 contributing factors by total collisions is calculated in a similar f
 To better understand the next steps to take to avoid collisions based on the contributing factors, a recommendation button is added. This is set up through the VBA window where a macro module is created to allow more information to show for recommended precautions:
 <img width="338" height="160" alt="B4" src="https://github.com/user-attachments/assets/ea40a427-b2cf-40c8-89e4-4b06c92dece7" />
 
+```
+Sub ToggleRecommendation01()
+    'Declare a variable to reference the shape group
+    Dim shp As Shape
+    Set shp = ActiveSheet.Shapes("Group 46")
+    
+    'Check if the shape is currently visible
+    If shp.Visible = msoTrue Then
+        'if visible, then hide
+        shp.Visible = msoFalse
+        Else
+            'if hidden, show
+        shp.Visible = msoTrue
+        End If
+End Sub
+```
+
 ![B4_a](https://github.com/user-attachments/assets/665da750-12f3-46b9-9e56-675481e181e8)
 - The same macros are duplicated then used for the Monthly vs Yearly Collision Trend.
 
 Another macro was created for the Weekly vs Time Interval Collisions chart where the option to toggle the values shown on the hitmap was created. 
 - A hitmap was created and a conditional graded color scale was added to sort out the information between the Time Interval and the Days of the Week.
 <img width="440" height="192" alt="B5" src="https://github.com/user-attachments/assets/56624312-860c-482e-9991-67c7efe31922" />
+
+```
+Sub ToggleNumbers()
+    'Variable declaration
+    Dim rng As Range
+    Dim Ws As Worksheet
+    
+    'set the sheet and range using the sheet name and range numbers
+    Set Ws = Sheets("Hitmap")
+    Set rng = Ws.Range("H16:N22")
+    
+    'Toggle visibility based on the current format of the top-left cell
+    If rng.Cells(1, 1).NumberFormat = ";;;" Then
+        rng.NumberFormat = "#,##0"
+        Else
+        rng.NumberFormat = ";;;"
+        End If
+End Sub
+```
 
 ![ToggleNumber](https://github.com/user-attachments/assets/fa29c5d5-f061-49c5-9fec-ac4adb09458c)
 
