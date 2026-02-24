@@ -45,3 +45,13 @@ To better understand the next steps to take based on the contributing factors, a
 <img width="338" height="160" alt="B4" src="https://github.com/user-attachments/assets/ea40a427-b2cf-40c8-89e4-4b06c92dece7" />
 
 ![B4_a](https://github.com/user-attachments/assets/665da750-12f3-46b9-9e56-675481e181e8)
+- The same macros are duplicated then used for the Monthly vs Yearly Collision Trend.
+
+Another macro was created for the Weekly vs Time Interval Collisions chart where the option to toggle the values shown on the hitmap was created. 
+- A hitmap was created and a conditional graded color scale was added to sort out the information between the Time Interval and the Days of the Week.
+<img width="440" height="192" alt="B5" src="https://github.com/user-attachments/assets/56624312-860c-482e-9991-67c7efe31922" />
+
+![ToggleNumber](https://github.com/user-attachments/assets/fa29c5d5-f061-49c5-9fec-ac4adb09458c)
+
+
+
