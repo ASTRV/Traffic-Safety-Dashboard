@@ -1,5 +1,5 @@
 # Traffic-Control-Dashboard
-### Project detailing the cleanup of Traffic Safety data and visualizing the same data in a dashboard.
+### Project detailing the cleanup of Traffic Safety data and visualizing the same data in two dashboards.
 
 The NYC traffic accident data between Jan 1st, 2021 to April 9th, 2023 is organized into a table that is sorted out and properly set up inside of Power Query.  
 
@@ -41,7 +41,7 @@ The top 10 contributing factors by total collisions is calculated in a similar f
 <img width="464" height="377" alt="B3" src="https://github.com/user-attachments/assets/944ed30d-81b0-4a55-bc1c-eb3df9ed74e9" />
 
 <br></br>
-To better understand the next steps to take based on the contributing factors, a recommendation button is added. This is set up through the VBA window where a macro module is created to allow more information to show for recommended precautions:
+To better understand the next steps to take to avoid collisions based on the contributing factors, a recommendation button is added. This is set up through the VBA window where a macro module is created to allow more information to show for recommended precautions:
 <img width="338" height="160" alt="B4" src="https://github.com/user-attachments/assets/ea40a427-b2cf-40c8-89e4-4b06c92dece7" />
 
 ![B4_a](https://github.com/user-attachments/assets/665da750-12f3-46b9-9e56-675481e181e8)
@@ -53,5 +53,12 @@ Another macro was created for the Weekly vs Time Interval Collisions chart where
 
 ![ToggleNumber](https://github.com/user-attachments/assets/fa29c5d5-f061-49c5-9fec-ac4adb09458c)
 
+The rest of the information is visualized in bar charts with data retrieved from Roles (Motorists, Cyclists, and Pedestrians) and Weekly vs Time Interval Collisions (By Seasons).
+- The information displayed determines the amount of accidents that caused either injuries or deaths per the role. The summary then states what the recommended action should be taken to prevent these types of collisions.
+- The Weekly vs Time Interval Collision is also determined by the highest amount of collisions that occurred seasonal and by what values. The bar chart highlights what is the maximum count shown and a recommendation is displayed for what the best steps are to take in order to prevent more collisions from happening in Spring.
 
-
+All of this data is categorized by the Boroughs in NYC (Bronx, Brooklyn, Manhattan, Queens, Staten Island, and any unspecified areas).
+<br></br>
+<img width="606" height="35" alt="B6" src="https://github.com/user-attachments/assets/65d250cf-a788-4482-9762-4c80128a4312" />
+- The data provided for each borough is connected through all the charts in this 1st Dashboard through its PivotTables and PivotCharts. 
+- Any Borough selected will properly display the sought-out information needed. 
