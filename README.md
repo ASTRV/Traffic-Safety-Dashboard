@@ -1,7 +1,10 @@
 # Traffic-Control-Dashboard
 ### Project detailing the cleanup of Traffic Safety data and visualizing the same data in a dashboard.
 
-The NYC traffic accident data between Jan 1st, 2021 to April 9th, 2023 is organized into a table that is sorted out and properly set up inside of Power Query. 
+The NYC traffic accident data between Jan 1st, 2021 to April 9th, 2023 is organized into a table that is sorted out and properly set up inside of Power Query.  
+
+![WholeDash](https://github.com/user-attachments/assets/01fae30e-10a1-48d6-ad71-4945c576f83e)
+
 -	Columns with missing/blank information were replaced and filled with “Unspecified” values.
 <img width="1673" height="846" alt="A1" src="https://github.com/user-attachments/assets/3f346abb-33fc-4495-8351-9a9465bca4b5" />
 <br></br>
