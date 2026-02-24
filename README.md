@@ -42,6 +42,7 @@ The top 10 contributing factors by total collisions is calculated in a similar f
 
 <br></br>
 To better understand the next steps to take to avoid collisions based on the contributing factors, a recommendation button is added. This is set up through the VBA window where a macro module is created to allow more information to show for recommended precautions:
+
 <img width="338" height="160" alt="B4" src="https://github.com/user-attachments/assets/ea40a427-b2cf-40c8-89e4-4b06c92dece7" />
 
 ```
